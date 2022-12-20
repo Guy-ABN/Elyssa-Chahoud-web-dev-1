@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>College Shiksha</title>
+	<title>AKU</title>
 	<link rel="stylesheet" type="text/css" href="Login.css">
 	<link rel = "icon" href = "jagran_logo1.jpg" type = "image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -90,7 +90,8 @@
 				$password1 = test_input($_POST['Password']);
 				$password2 = test_input($_POST['ConfirmPassword']);
 
-				$link = mysqli_connect("localhost", "root", "");
+				// $link = mysqli_connect("localhost", "root", "");
+				$link = mysqli_connect("localhost", "root", "", "elyssa_webdev1");
 				if (mysqli_connect_errno()) {
     				printf("Connect failed: %s\n", mysqli_connect_error());
     				exit();
